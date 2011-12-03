@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>jQuery Storyline</title>
+		<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.7.custom.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.storyline-0.1.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.7.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.storyline-0.1.js"></script>
+		<script type="text/javascript">
+			jQuery(function($){
+				$('.example ul').storyline({elementwidth:200,elementsperview:6});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery Storyline</h1>
+		<h2>A full feature storyline with few lines of code</h2>
+		<h3>Credits</h3>
+		<div class="credits">
+			<ul>
+				<li><a href="http://www.julianxhokaxhiu.com/">Julian Xhokaxhiu</a>, developer</li>
+				<li><a href="http://www.aicod.it/" title="Web Agency Parma">Aicod srl</a> for the time they let me to develop this :)</li>
+			</ul>
+		</div>
+		<h3>Features</h3>
+		<div class="features">
+			<ul>
+				<li>It simply works with jQuery and jQueryUI ( + theme), <strong>nothing else is required.</strong></li>
+				<li>Animated transitions when scrolling or when using buttons Previous or Next.</li>
+				<li><strong>Touch support</strong>, it means that someone wants to scroll your storyline with the power of a thumb, he can just scroll it like when he scroll pages. (Thanks to <a href="http://www.netcu.de/jquery-touchwipe-iphone-ipad-library" title="jQuery Touchwipe Plugin (iPhone, iPad, iPod Touch Gesten / Gestures, Wischeffekt / Wipe Effect)">jQuery Touchwipe</a>)</li>
+			</ul>
+		</div>
+		<h3>Changelog</h3>
+		<div class="changelog">
+			<ul>
+				<li>
+					<label>0.1</label>
+					<ul>
+						<li>initial relase version.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h3>Download</h3>
+		<div class="download">
+			<ul>
+				<li><label>CSS:</label><a href="css/jquery.storyline-0.1.css">Get it</a></li>
+				<li><label>JS:</label><a href="js/jquery.storyline-0.1.js">Get it</a></li>
+				<li><label>Touch dependency:</label><a href="http://www.netcu.de/jquery-touchwipe-iphone-ipad-library" title="jQuery Touchwipe Plugin (iPhone, iPad, iPod Touch Gesten / Gestures, Wischeffekt / Wipe Effect)">jQuery Touchwipe</a></li>
+			</ul>
+		</div>
+		<h3>Installation</h3>
+		<div class="installation">
+			<ul>
+				<li>See the sources of this page ;)</li>
+			</ul>
+		</div>
+		<h3>Example</h3>
+		<div class="example">
+			<ul>
+				<li class="white"></li>
+				<li class="red"></li>
+				<li class="green"></li>
+				<li class="blue"></li>
+				<li class="black"></li>
+				<li class="white"></li>
+				<li class="red"></li>
+				<li class="green"></li>
+				<li class="blue"></li>
+				<li class="black"></li>
+				<li class="white"></li>
+				<li class="red"></li>
+				<li class="green"></li>
+				<li class="blue"></li>
+				<li class="black"></li>
+				<li class="white"></li>
+				<li class="red"></li>
+				<li class="green"></li>
+				<li class="blue"></li>
+				<li class="black"></li>
+			</ul>
+		</div>
+		<h3>Documentation</h3>
+		<div class="documentation">
+			<label class="first">elementwidth</label>
+			<span>This option define how much width would have your storyline items.</span>
+			<ul class="details">
+				<li><label>Type:</label><span>Integer</span></li>
+				<li><label>Default:</label><span>0</span></li>
+				<li><label>Example:</label><span>$('ul').storyline({elementwidth:200});</span></li>
+			</ul>
+			<label class="first">elementsperview</label>
+			<span>This option define how much items you need per view.</span>
+			<ul class="details">
+				<li><label>Type:</label><span>Integer</span></li>
+				<li><label>Default:</label><span>0</span></li>
+				<li><label>Example:</label><span>$('ul').storyline({elementsperview:6});</span></li>
+			</ul>
+			<label class="first">tonextonslide</label>
+			<span>This option define how much milliseconds you will need to pass to the next item when scrolling (</strong>this is need only if you want animation</strong>, put it at 0 for no animation).</span>
+			<ul class="details">
+				<li><label>Type:</label><span>Integer</span></li>
+				<li><label>Default:</label><span>100</span></li>
+				<li><label>Example:</label><span>$('ul').storyline({tonextonslide:50});</span></li>
+			</ul>
+			<label class="first">tonextonclick</label>
+			<span>This option define how much milliseconds you will need to pass to the next item when clicking Prev or Next buttons (</strong>this is need only if you want animation</strong>, put it at 0 for no animation).</span>
+			<ul class="details">
+				<li><label>Type:</label><span>Integer</span></li>
+				<li><label>Default:</label><span>200</span></li>
+				<li><label>Example:</label><span>$('ul').storyline({tonextonclick:100});</span></li>
+			</ul>
+			<label class="first">step</label>
+			<span>This option define how much items will be shown when scrolling or after clicking Prev or Next buttons.</span>
+			<ul class="details">
+				<li><label>Type:</label><span>Integer</span></li>
+				<li><label>Default:</label><span>1</span></li>
+				<li><label>Example:</label><span>$('ul').storyline({step:2});</span></li>
+			</ul>
+			<label class="first">touchstep</label>
+			<span>This option define how much items will be shown when scrolling with your finger on it (<strong>Only for Touch devices</strong>).</span>
+			<ul class="details">
+				<li><label>Type:</label><span>Integer</span></li>
+				<li><label>Default:</label><span>2</span></li>
+				<li><label>Example:</label><span>$('ul').storyline({touchstep:4});</span></li>
+			</ul>
+		</div>
+	</body>
+</html>

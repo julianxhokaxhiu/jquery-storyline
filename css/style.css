@@ -1,0 +1,31 @@
+body{padding:10px;font-size:75%}
+a{color:fireBrick;text-decoration:none;font-weight:bold}
+h1,h2,h3,h4{margin:0;padding:3px}
+h1,h2{margin-bottom:5px;text-align:center}
+h1{color:fireBrick}
+h2{font-size:1.1em}
+h3{font-size:1.4em;color:fireBrick;border:1px solid #FC0;background-color:#FFFC7F;}
+label{display:block}
+ul{margin:5px 0 5px 20px;padding:0;list-style-type:none}
+ul li{margin-left:5px}
+table{width:50%}
+/* DOCUMENTATION */
+.documentation{padding:5px 0 5px 20px}
+.documentation label{padding-top:10px;border-top:1px solid #CCC}
+.documentation label.first{padding:0;border:none}
+/* DETAILS */
+.details{margin-bottom:12px;border:1px dashed #999;background-color:#EFEFEF}
+.details label{display:inline;margin-right:5px;padding:0;border:none}
+/* DOWNLOAD */
+.download label{display:inline;margin-right:5px}
+/* EXAMPLES */
+.example{margin:10px auto}
+.example ul{margin:0;list-style-type:none}
+.example ul li{margin:0;padding:0}
+.example .red{background-color:red}
+.example .green{background-color:green}
+.example .blue{background-color:blue}
+.example .black{background-color:black}
+/* FEATURES */
+.features{padding-left:20px}
+.features ul{list-style-type:disc}
